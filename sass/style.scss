@@ -1,0 +1,116 @@
+@font-face {
+    font-family: NextArtBold;
+    src: url(../fonts/NEXTART_Bold.otf);
+}
+@font-face {
+    font-family: NextArtSemiBold;
+    src: url(../fonts/NEXTART_SemiBold.otf);
+}
+@font-face {
+    font-family: NextArtRegular;
+    src: url(../fonts/NEXTART_Regular.otf);
+}
+.header{
+    min-height: 84px;
+    background-color: #272727;
+    padding-top: 10px;
+    &_wrapper{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &_menu{
+        margin: 0 auto;
+        margin-top: 14px;
+        width: 80%;
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &_item{
+            font-style: normal;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 21px;
+            display: flex;
+            align-items: center;
+            a{
+                text-decoration: none;
+                color: #E4E4E4;
+                text-transform: uppercase;
+                font-family: NextArtBold;
+                &:hover{
+                    color: orange;
+                    transition: 1s;
+                }
+            }
+        }
+    }
+}
+.main{
+    min-height: 720px;
+    background-color: #272727;
+    color: #E4E4E4;
+    &_wrapper{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &_item{
+            width: 50%;
+            &:last-child{
+                position: relative;
+            }
+        }
+    }
+    &_title{
+        font-family: NextArtSemiBold;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 54px;
+    }
+    &_name{
+        font-family: NextArtBold;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 72px;
+        line-height: 82px;
+        margin-top: 27px;
+    }
+    &_descr{
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 21px;
+        margin-top: 27px;
+    }
+    &_btn{
+        font-family: NextArtBold;
+        font-style: normal;
+        font-weight: bold;
+        width: 200px;
+        height: 50px;
+        background-color:orange;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        margin-top: 27px;
+        text-transform: uppercase;
+    }
+    &_myself{
+        img{
+            max-width: 710px;
+            height: 710px;
+        }
+        position: absolute;
+        top: 10px;
+        left: 60px;
+        z-index: 99;
+    }
+}
+// .about{
+//     min-height: 1800px;
+// }
+// background-color: #3C3C3C;
