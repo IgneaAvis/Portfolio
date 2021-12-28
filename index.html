@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Klochkov Konstantin</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="shortcut icon" href="icons/favicon.png" type="image/png">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -15,21 +16,21 @@
             <div class="header_wrapper">
                 <ul class="header_menu">
                     <li class="header_menu_item"><a href="#">Home</a></li>
-                    <li class="header_menu_item"><a href="#">About me</a></li>
-                    <li class="header_menu_item"><a href="#">Portfolio</a></li>
-                    <li class="header_menu_item"><a href="#">Contact</a></li>
+                    <li class="header_menu_item"><a href="#about">About me</a></li>
+                    <li class="header_menu_item"><a href="#portfolio">Portfolio</a></li>
+                    <li class="header_menu_item"><a href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
     </header>
-    <section class="main">
+    <section class="main" id="main">
         <div class="container">
             <div class="main_wrapper">
                 <div class="main_wrapper_item">
                     <h2 class="main_title">HELLO</h2>
                     <h1 class="main_name">I'M KONSTANTIN <br> KLOCHKOV</h1>
                     <div class="main_descr">I've been doing web design, front-end and <br> back-end development for a year now. Do you <br> need a website design, site layout, or maybe a <br> turnkey website? Then contact me</div>
-                    <button class="main_btn">Contact me</button>
+                    <button class="button" onclick="window.location.href = '#contact'">Contact me</button>
                 </div>
                 <div class="main_wrapper_item">
                     <div class="main_circle"><img src="img/main_circle.png" alt="circle"></div>
@@ -38,12 +39,160 @@
             </div>
         </div>
     </section>
-    <!-- <section class="about">
+    <section class="about" id="about">
         <div class="container">
-            
+            <div class="about_wrapper">
+                <h2 class="about_title">About me</h2>
+                <div class="about_white"><img src="img/about_white.png" alt="whiteCircle"></div>
+                <div class="about_yellow"><img src="img/about_yellow.png" alt="yellowCircle"></div>
+                <div class="about_blue"><img src="img/about_blue.png" alt="blueCircle"></div>
+                <div class="about_item">
+                    Hello again everyone! So, you already know that my name is Gleb. A little about myself: student, 18 y.o., athlete-football player, I love creativity since childhood, I live in Donetsk, Ukraine. Why programming? Everything is elementary - I like it, the profession of the future, thanks to which I can provide myself and fulfill my dream - travel, at the moment I specialize in web design, front-end and back-end development, turnkey websites. Why should you choose me? I approach each order with great responsibility and love, as I want to make a name for myself, exclude plagiarism and negligence, fully study the project, the client and its target audience, work for quality, trying to make an order as quickly and uniquely as possible, taking into account all the edits and wishes.
+                        By trusting me, you will get the maximum return for your project, save your nerves and time.
+                        If you are interested in me , you want to know something more or use my services, then I will provide all my contacts below.
+                </div>
+                <div class="about_item1"><img src="img/photo1.jpg" alt="photo1"></div>
+                <div class="about_item2"><img src="img/photo2.jpg" alt="photo2"></div>
+                <div class="about_item3"><img src="img/photo3.jpg" alt="photo3"></div>
+            </div>
+            <div class="about_wrapper2">
+                <h2 class="about_title2">Technologies</h2>
+                <div class="about_tech">
+                    <div class="about_tech_item">
+                        <img src="icons/html.png" alt="html">
+                        <div class="about_tech_item_title">HTML5</div>
+                    </div>
+                    <div class="about_tech_item">
+                        <img src="icons/css.png" alt="css">
+                        <div class="about_tech_item_title">CSS3</div>
+                    </div>
+                    <div class="about_tech_item">
+                        <img src="icons/js.png" alt="js">
+                        <div class="about_tech_item_title">JS</div>
+                    </div>
+                    <div class="about_tech_item">
+                        <img src="icons/jquery.svg" alt="jquery">
+                        <div class="about_tech_item_title">JQUERY</div>
+                    </div>
+                    <div class="about_tech_item">
+                        <img src="icons/sass.png" alt="sass/scss">
+                        <div class="about_tech_item_title">SASS/SCSS</div>
+                    </div>
+                    <div class="about_tech_item">
+                        <img src="icons/php.png" alt="php">
+                        <div class="about_tech_item_title">PHP</div>
+                    </div>
+                    <div class="about_tech_item">
+                        <img src="icons/mysql.png" alt="mysql">
+                        <div class="about_tech_item_title">MYSQL</div>
+                    </div>
+                    <div class="about_tech_item">
+                        <img src="icons/wordpress.png" alt="wordpress">
+                        <div class="about_tech_item_title">WORDPRESS</div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </section> -->
+    </section>
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="portfolio_wrapper">
+                <h2 class="portfolio_title">Portfolio</h2>
+            <div class="portfolio_slider">
+                <div class="portfolio_slider_item">
+                    <div class="portfolio_slider_wrapper">
+                        <div class="portfolio_slider_wrapper_item">
+                            <img src="img/example.png" alt="">
+                        </div>
+                        <div class="portfolio_slider_wrapper_item">
+                            <div class="portfolio_slider_wrapper_item_title">Nike</div>
+                            <div class="portfolio_slider_wrapper_item_descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima quod voluptatem modi praesentium dolores eligendi dicta laboriosam unde repellendus dolore, sunt mollitia commodi libero? Ea nobis impedit culpa consequuntur iure?</div>
+                            <button class="button">More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio_slider_item">
+                        <div class="portfolio_slider_wrapper">
+                            <div class="portfolio_slider_wrapper_item">
+                                <img src="img/example.png" alt="">
+                            </div>
+                            <div class="portfolio_slider_wrapper_item">
+                                <div class="portfolio_slider_wrapper_item_title">DesignPro</div>
+                                <div class="portfolio_slider_wrapper_item_descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, fugit quia doloribus cumque quas, laborum optio reprehenderit consequuntur animi, molestiae culpa nostrum ut cum in architecto non perferendis. Illum, ipsum.</div>
+                                <button class="button">More</button>
+                            </div>
+                    </div>
+                </div>
+                <div class="portfolio_slider_item">
+                    <div class="portfolio_slider_wrapper">
+                            <div class="portfolio_slider_wrapper_item">
+                                <img src="img/example.png" alt="">
+                            </div>
+                            <div class="portfolio_slider_wrapper_item">
+                                <div class="portfolio_slider_wrapper_item_title">Pulse</div>
+                                <div class="portfolio_slider_wrapper_item_descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptatem natus a accusamus saepe exercitationem fugiat perspiciatis omnis asperiores totam officiis, magni inventore odit non autem aspernatur tenetur blanditiis odio.</div>
+                                <button class="button">More</button>
+                            </div>
+                    </div>
+                </div>
+                <div class="portfolio_slider_item">
+                    <div class="portfolio_slider_wrapper">
+                            <div class="portfolio_slider_wrapper_item">
+                                <img src="img/example.png" alt="">
+                            </div>
+                            <div class="portfolio_slider_wrapper_item">
+                                <div class="portfolio_slider_wrapper_item_title">Uber</div>
+                                <div class="portfolio_slider_wrapper_item_descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus veniam ipsum cum fugit in consequuntur eos quis perspiciatis nisi? Ipsam nemo modi ea perspiciatis veniam. Nostrum, beatae? Neque, veniam perferendis.</div>
+                                <button class="button">More</button>
+                            </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact_wrapper">
+                <h2 class="contact_title">Contact</h2>
+                <form action="#" class="contact_form">
+                    <div class="contact_form_wrapper">
+                        <input class="contact_name" id="name" name="name" type="text" required placeholder="Your name">
+                        <input class="contact_email" id="email" name="email" type="email" required placeholder="Your E-mail">
+                    </div>
+                    <textarea class="contact_msg" id="msg" name="msg" type="text" required placeholder="Your Message"></textarea>
+                    <button type="submit" class="button">Send</button>
+                </form>
+                <div class="contact_social">
+                    <div class="contact_social_item"><a href="https://t.me/klokonst"><img src="icons/telegram.png" alt="telegram"></a></div>
+                    <div class="contact_social_item"><a href="https://vk.com/klokonst"><img src="icons/vk.png" alt="vk"></a></div>
+                    <div class="contact_social_item"><a href="https://www.instagram.com/klokonst/"><img src="icons/instagram.png" alt="instagram"></a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer_wrapper">
+                <div class="footer_wrapper_item">
+                    <ul class="footer_menu">
+                        <li class="footer_menu_item"><a href="#main">Home</a></li>
+                        <li class="footer_menu_item"><a href="#about">About me</a></li>
+                        <li class="footer_menu_item"><a href="#portfolio">Portfolio</a></li>
+                        <li class="footer_menu_item"><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer_wrapper_item">
+                    <div class="footer_wrapper_item_title">Contact:</div>
+                    <div class="footer_wrapper_item_email">Email: <a href="mailto: ko.klochkov@gmail.com">ko.klochkov@gmail.com</a></div>
+                    <div class="footer_wrapper_item_phone">Calls: <a href="tel: +79624436582">8(962)443-65-82</a></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="scroll" id="scroller"><img src="icons/arrow_top.png" alt="scroll"></div>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>
